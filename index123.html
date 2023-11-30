@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Amazon-like Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Simple Store</h1>
+        </div>
+        <nav>
+            <a href="#electronics">Electronics</a>
+            <a href="#books">Books</a>
+            <a href="#clothing">Clothing</a>
+            <a href="#contact-us">Contact Us</a>
+        </nav>
+        <div class="cart-container">
+            <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="search-field" placeholder="Search for products...">
+        <button onclick="searchProducts()">Search</button>
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Featured Products -->
+        <!-- <section id="featured-products">
+            <h2>Featured Products</h2>
+            Product cards will be populated here -->
+        <!-- </section> -->
+
+        <!-- Electronics Section -->
+    
+                     
+        <section id="electronics" class="product-category" >
+            <h2>Electronics</h2>
+            <div class="product" id="product3">
+                <h3>Laptop</h3>
+                <img src="laptop1.png" alt="Sleek Laptop">
+                <p>$999.99</p>
+                <button onclick="addToCart('Laptop', 999.99)">Add to Cart</button>
+            </div>
+            <div class="product" id="product4">
+                <h3>Smart TV</h3>
+                <img src="tv1.png" alt="4K Smart TV">
+                <p>$1299.99</p>
+                <button onclick="addToCart('Smart TV', 1299.99)">Add to Cart</button>
+            </div>
+            <div class="product" id="product5">
+                <h3>Digital Camera</h3>
+                <img src="cam1.png" alt="Digital Camera">
+                <p>$499.99</p>
+                <button onclick="addToCart('Digital Camera', 499.99)">Add to Cart</button>
+            </div>
+        </section>
+     
+        </section>
+
+        <!-- Books Section -->
+       
+            <section id="books" class="product-category">
+                <h2>Books</h2>
+                <div class="product" id="product6">
+                    <h3>Cozy Reading Nook</h3>
+                    <img src="books1.png" alt="Cozy Reading Nook">
+                    <p>$39.99</p>
+                    <button onclick="addToCart('Cozy Reading Nook', 39.99)">Add to Cart</button>
+                </div>
+                <div class="product" id="product7">
+                    <h3>Bookshelf Collection</h3>
+                    <img src="books2.png" alt="Bookshelf Collection">
+                    <p>$89.99</p>
+                    <button onclick="addToCart('Bookshelf Collection', 89.99)">Add to Cart</button>
+                </div>
+                <div class="product" id="product8">
+                    <h3>Open Book with Coffee</h3>
+                    <img src="books3.png" alt="Open Book with Coffee">
+                    <p>$14.99</p>
+                    <button onclick="addToCart('Open Book with Coffee', 14.99)">Add to Cart</button>
+                </div>
+              </section>
+        </section>
+
+        <!-- Clothing Section -->
+     
+            <section id="clothing"  class="product-category">
+                <h2>Clothing</h2>
+                <div class="product" id="product9">
+                    <h3>Casual Outfit</h3>
+                    <img src="clothesset1.png" alt="Casual Outfit">
+                    <p>$49.99</p>
+                    <button onclick="addToCart('Casual Outfit', 49.99)">Add to Cart</button>
+                </div>
+                <div class="product" id="product10">
+                    <h3>Boutique Store Display</h3>
+                    <img src="clothesset2.png" alt="Boutique Store Display">
+                    <p>$299.99</p>
+                    <button onclick="addToCart('Boutique Store Display', 299.99)">Add to Cart</button>
+                </div>
+                <div class="product" id="product11">
+                    <h3>Fitness Clothing</h3>
+                    <img src="clothesset3.png" alt="Fitness Clothing">
+                    <p>$59.99</p>
+                    <button onclick="addToCart('Fitness Clothing', 59.99)">Add to Cart</button>
+                </div>
+              </section>
+        </section>
+    </main>
+
+    <!-- Suggestion Box -->
+    <aside id="suggestion-box">
+        <h2>Your Suggestions</h2>
+        <form id="suggestion-form">
+            <textarea id="suggestion-text" placeholder="Have any suggestions? Let us know!" required></textarea>
+            <button type="submit">Send Suggestion</button>
+        </form>
+        <p id="thank-you-message" style="display:none;">Thank you for your suggestion!</p>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer>
+        <section id="contact-us">
+            <h3>Contact Us</h3>
+            <p>Email: contact@simplestore.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+        <section id="social-media">
+            <h3>Follow Us</h3>
+            <!-- Social media links will be populated here -->
+        </section>
+        <section id="newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter for the latest updates.</p>
+            <form id="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section id="legal">
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#terms-of-service">Terms of Service</a>
+        </section>
+        <p>&copy; 2023 Simple Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

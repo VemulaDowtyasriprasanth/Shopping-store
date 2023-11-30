@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Amazon-like Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="top-nav" role="navigation" aria-label="Top Navigation">
+            <h1>Simple Store</h1>
+            <!-- <input type="search" id="product-search" placeholder="Search products..." aria-label="Search Products"> -->
+            <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" id="search-field" placeholder="Search for products...">
+                    <button onclick="searchProducts()">Search</button>
+                </div>
+
+            <button id="cart-button" aria-label="Shopping Cart">Cart <span id="cart-item-count">0</span> - $<span id="cart-total">0.00</span></button>
+        </div>
+        <nav class="main-nav">
+            <a href="#electronics">Electronics</a>
+            <a href="#books">Books</a>
+            <a href="#clothing">Clothing</a>
+            <!-- Add more categories as needed -->
+        </nav>
+    </header>
+    <main>
+        <!-- Sections for different categories -->
+        <!-- ... -->
+    </main>
+    <aside id="order-suggestion">
+        <h2>Leave a Suggestion</h2>
+        <form id="suggestion-form">
+            <textarea id="suggestion-text" placeholder="Enter your suggestion here..." required aria-label="Suggestion Text"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="thank-you-message" style="display:none;">Thanks for your suggestion!</p>
+    </aside>
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms-of-service">Terms of Service</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+        <div class="social-media-links">
+            <!-- Social media icons would go here -->
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- Live Chat Widget -->
+    <!-- This would be a third-party widget most of the time, like Intercom or Drift. -->
+    <div id="live-chat-widget"></div>
+</body>
+</html>
